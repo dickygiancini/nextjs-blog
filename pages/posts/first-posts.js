@@ -1,8 +1,22 @@
 import Link from 'next/link'
+import Image from 'next/image'
+import Head from 'next/head'
+
+const ProfileImageComponent = () => (
+    <Image
+        src="/images/pepe.jpeg"
+        height={144}
+        width={144}
+        alt="OMEGALUL"
+    />
+)
 
 export default function FirstPost() {
     return (
         <div className="container">
+            <Head>
+                <title>Your First Post</title>
+            </Head>
             <h1>This is my first post</h1>
             <h2>
                 <Link href="/">
